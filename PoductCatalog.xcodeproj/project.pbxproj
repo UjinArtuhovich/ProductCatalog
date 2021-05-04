@@ -124,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				939F8C3826401AEF00A49822 /* ProductCatalogCoreData */,
+				939F8C272640198C00A49822 /* ProductCatalogEntity */,
 				939F8C2B264019C600A49822 /* ProductCatalogModel */,
 				939F8C282640199900A49822 /* ProductCatalogView */,
 				939F8C29264019A600A49822 /* ProductCatalogScreen */,
@@ -207,7 +208,6 @@
 			children = (
 				939F8C3926401B3800A49822 /* DataBaseManager.swift */,
 				939F8BFA2640195800A49822 /* PoductCatalog.xcdatamodeld */,
-				939F8C272640198C00A49822 /* ProductCatalogEntity */,
 			);
 			path = ProductCatalogCoreData;
 			sourceTree = "<group>";
