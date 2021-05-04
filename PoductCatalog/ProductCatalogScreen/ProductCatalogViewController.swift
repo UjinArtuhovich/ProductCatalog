@@ -50,12 +50,12 @@ extension ProductCatalogViewController: UICollectionViewDataSource, UICollection
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ProductCatalogCell
         //MARK: Check Internet connection
         if !InternetConnectionObserver.shared.isInternetAvailable() {
-            let productImage = DataBaseManager.shareInstance.fetchImage()
-            cell.productName.text = products[indexPath.item].name 
-            cell.productPrice.text = "$\(products[indexPath.item].price)" 
+            let productDataBase = DataBaseManager.shareInstance.fetchImage()
             //MARK: Check CoreData context
-            if productImage.count != 1 {
-                cell.productImage.image = UIImage(data: productImage[indexPath.item+1].image!)
+            if (productDataBase.image.count != 1) {
+                cell.productImage.image = UIImage(data: productDataBase.image[indexPath.item].image!)
+                cell.productName.text = productDataBase.name[indexPath.item].name!
+                cell.productPrice.text = "$\(productDataBase.price[indexPath.item].price)"
             } else {
                 let image = UIImage(named: "error")
                 cell.productImage.image = image

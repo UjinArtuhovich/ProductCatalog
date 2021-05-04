@@ -27,7 +27,7 @@ class ProductCatalogCell: UICollectionViewCell {
             //MARK: Save cache
             imageCache.setObject(productImage.image!, forKey: self.data.image as NSString)
             //MARK: Save in CoreData
-            DataBaseManager.shareInstance.saveImage(data: data)
+            DataBaseManager.shareInstance.saveImage(data: data, name: self.data.name, price: Int32(self.data.price))
         }
     }
 }

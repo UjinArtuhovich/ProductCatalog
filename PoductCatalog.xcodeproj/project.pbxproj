@@ -131,7 +131,6 @@
 				939F8BFD2640195A00A49822 /* Assets.xcassets */,
 				939F8BFF2640195A00A49822 /* LaunchScreen.storyboard */,
 				939F8C022640195A00A49822 /* Info.plist */,
-				939F8BFA2640195800A49822 /* PoductCatalog.xcdatamodeld */,
 			);
 			path = PoductCatalog;
 			sourceTree = "<group>";
@@ -207,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				939F8C3926401B3800A49822 /* DataBaseManager.swift */,
+				939F8BFA2640195800A49822 /* PoductCatalog.xcdatamodeld */,
 				939F8C272640198C00A49822 /* ProductCatalogEntity */,
 			);
 			path = ProductCatalogCoreData;
