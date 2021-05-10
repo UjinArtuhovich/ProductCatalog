@@ -35,12 +35,12 @@ extension ProductCatalogViewController: UICollectionViewDataSource, UICollection
         //MARK: DidSelected action
         getProductDescriptionData(index: indexPath.item) { product, error in
             guard let product = product else {
-                self.presentSearchAlertController(withTitle: "Error", message: "No description", style: .alert)
+                self.presentCustomAlertController(withTitle: "Error", message: "No description", style: .alert)
                 return
             }
             let productDescription = product.description
             let productName = product.name
-            self.presentSearchAlertController(withTitle: productName, message: productDescription, style: .alert)
+            self.presentCustomAlertController(withTitle: productName, message: productDescription, style: .alert)
         }
     }
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

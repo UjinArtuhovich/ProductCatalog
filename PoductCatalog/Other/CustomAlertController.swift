@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 extension ProductCatalogViewController {
-    func presentSearchAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style) {
+    func presentCustomAlertController(withTitle title: String?, message: String?, style: UIAlertController.Style) {
         let ac = UIAlertController(title: title, message: message, preferredStyle: style)
         let ok = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         ac.addAction(ok)
